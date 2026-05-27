@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const api = axios.create({ baseURL: import.meta.env.VITE_API_URL || 'http://localhost:5005/api' })
+const api = axios.create({ baseURL: import.meta.env.VITE_API_URL || 'https://zebvo.onrender.com/api' })
 
 export async function fetchPosts() {
   const res = await api.get('/posts');
@@ -23,7 +23,7 @@ export async function translatePost(id, to='hi') {
 }
 
 export function exportCSV() {
-  const url = (import.meta.env.VITE_API_URL || 'http://localhost:5005/api') + '/export/csv';
+  const url = (import.meta.env.VITE_API_URL || 'https://zebvo.onrender.com/api') + '/export/csv';
   window.open(url, '_blank');
 }
 
