@@ -18,3 +18,4 @@ Core features:
 See README sections inside `backend` and `frontend` for run instructions.
 
 Architecture note: The code is structured so adding more platforms (APIs/parsers) is straightforward — add a new data source adapter and hook it into the seed/import flow.
+# zebvo
